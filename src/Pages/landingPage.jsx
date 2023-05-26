@@ -20,14 +20,22 @@ const landingPage = () => {
     }
     , [pageNumber])
 
-    const handleClick = async() => {
+    const handleNext = async() => {
         setPageNumber(pageNumber + 1)
     }
+
+    const handlePrev = async() => {
+        if(pageNumber > 0){
+            setPageNumber(pageNumber - 1)
+        }
+    }
+
 
     return (
         <>
         <div className='button'>
-            <button  onClick={handleClick}>Next Page</button>
+            <button  onClick={handleNext}>Next Page</button>
+            <button onClick={handlePrev}>Previous Page</button>
         </div>
         <div className='container'>
             {videos.map((video) => (

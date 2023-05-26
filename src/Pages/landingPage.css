@@ -11,7 +11,22 @@
 .button{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
+}
+
+.button button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button button:hover{
+    background-color: #4d4d4d;
 }
