@@ -1,0 +1,27 @@
+/* .videoThumbnail{
+    display : flex;
+    flex-direction: column;
+    padding : 20px;
+    height : 400px;
+    width : 300px;
+    border : 1px solid black;
+    border-radius : 10px;
+}
+
+.thumbnailimg img{
+    height : 200px;
+    width : 300px;
+    border-radius : 10px;
+} */
+
+.videoThumbnail{
+    display : flex;
+    flex-direction: column;
+    padding : 20px;
+    height : 700px;
+    width : 300px;
+    border : 1px solid black;
+    border-radius : 10px;
+    margin: 20px;
+}
+

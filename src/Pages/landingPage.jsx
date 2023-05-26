@@ -1,6 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react'
 import { useState, useEffect } from 'react'
+import VideoThumbnail from '../Components/VideoThumbnail/videoThumbnail'
+import './landingPage.css'
 
 const landingPage = () => {
   const [videos, setVideos] = useState([])
@@ -19,9 +21,7 @@ const landingPage = () => {
   return (
     <div>
        {videos.map((video) => (
-         <ul>
-         <div>{video.postId}</div>
-         </ul>
+        <VideoThumbnail key={video.postId} name={video.creator.name} title={video.submission.title} thumbnail={video.submission.thumbnail} pic={video.creator.pic} video={video.submission.mediaUrl} />
         ))}
     </div>
   )
