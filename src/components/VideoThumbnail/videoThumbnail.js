@@ -9,14 +9,12 @@ const VideoThumbnail = ({thumbnail, title, name, pic, video}) => {
 
     return (
         <div className="videoThumbnail" >
-            <ReactPlayer url={video} controls={true} light={<img src={thumbnail} alt="demo" />} />
-            {/* <img className="thumbnailimg"src={thumbnail} alt="thumbnail" /> */}
-            <div className="videoThumbnail__info">
-                {/* <img src={pic} alt="channelImage" /> */}
-                <div className="videoThumbnail__text">
-                    <h4>{title}</h4>
-                    <p>{name}</p>
-                </div>
+            <div className='video'>
+                <ReactPlayer url={video} controls={true}  light={<img src={thumbnail} alt="demo" width={300} height={300}  />} width='300px' height='300px' />
+            </div>
+            <div className="videoThumbnail__text">
+                <h4>Title : {title}</h4>
+                <p className='text'>Creator : {name}</p>
             </div>
         </div>
     );
