@@ -2,7 +2,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react'
 import { useState, useEffect } from 'react'
-import VideoThumbnail from '../Components/VideoThumbnail/videoThumbnail.js'
+import VideoThumbnail from '../components/VideoThumbnail/videoThumbnail.js'
 import './landingPage.css'
 
 const landingPage = () => {
